@@ -1,0 +1,42 @@
+html {
+  font-size: 0.625rem;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  @include transition-duration(.1s);
+}
+.mt-7 {
+  margin-top: 5rem;
+}
+.error {
+  border: 2px solid red;
+}
+.success {
+  border: 2px solid green;
+}
+.active {
+  overflow: hidden;
+
+}
+.owl-carousel .owl-dots {
+  margin: 2rem auto 0;
+  text-align: center;
+}
+.owl-carousel .owl-dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  border: 2px solid #dedfe0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.owl-carousel .owl-dots .active {
+  border: 2px solid #1ca8dd;
+}
+
+.owl-carousel .owl-dots .owl-dot:last-child {
+  margin-right: 0;
+}
