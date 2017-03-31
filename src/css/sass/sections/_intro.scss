@@ -1,30 +1,189 @@
 .intro {
-  padding-top: 11rem;
-  background: $main-blue;
-}
-.slider-block {
+  padding: 4.5rem 0 0.5rem;
   position: relative;
-  top: 9.5rem;
-  max-width: 65rem;
-  margin: -3rem auto 0;
-}
-.dots-list {
-  margin: 2rem auto 0;
-  text-align: center;
-  li {
-    width: 1.5rem;
-    height: 1.5rem;
-    display: inline-block;
-    text-indent: -9999px;
 
-    &:nth-child(2) {
-      margin: 0 0.5rem;
+  &:after {
+    @include pseudo('', block);
+    position: absolute;
+    bottom: -2px;
+    left: 14%;
+    z-index: 100;
+    width: 15.3rem;
+    height: 4.9rem;
+    @include section-bg("../img/bottom-stuff.png");
+  }
+}
+
+.intro-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: $intro-title;
+  margin-left: 10rem;
+  @media (max-width: 700px) {
+    margin-left: 0;
+  }
+}
+.owl-carousel {
+  border-top: 7px solid $main-border;
+  border-bottom: 7px solid $main-border;
+  .owl-item {
+    width: 100%;
+    .container {
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
-.dots-bdr {
-  border: 2px solid $dots-color;
-  &-active {
-    border: 2px solid $dot-active;
+
+
+.owl-item-first {
+  @include section-bg("../img/slider-bg.png");
+}
+.owl-item-second {
+  @include section-bg("../img/second-slider-bg.jpg");
+}
+.owl-item-third {
+  @include section-bg("../img/slider-second-bg.jpg");
+}
+.owl-item-fourth {
+  @include section-bg("../img/slider-third-bg.jpg");
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.slide-content {
+  max-width: 34rem;
+  padding: 1.5rem 5rem 1.5rem 0;
+  @media (max-width: 385px) {
+    padding-right: 0;
+  }
+}
+.slide-info {
+  position: relative;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.89);
+  border-radius: 0.4rem 0.5rem 0.5rem 0.4rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  margin-bottom: 1.5rem;
+
+  &:after {
+    @include pseudo('', block);
+    position: absolute;
+    bottom: 37%;
+    left: -4%;
+    width: 4.5rem;
+    height: 6.6rem;
+    @include section-bg("../img/left-stuf.png");
+  }
+
+  &:before {
+    @include pseudo('', block);
+    position: absolute;
+    top: -4%;
+    right: 1%;
+    width: 5.5rem;
+    height: 3.6rem;
+    @include section-bg("../img/top-stuf.png");
+  }
+}
+
+.inline-content {
+  display: flex;
+  align-items: flex-end;
+  margin: 1.5rem 0 2.5rem;
+}
+.date-list {
+  display: flex;
+  li {
+    width: 4.2rem;
+    height: 6.3rem;
+    display: flex;
+    align-items: center;
+    font-size: 6rem;
+    padding: 0.5rem;
+    @include section-bg("../img/date-wrap.png");
+  }
+}
+.short-info {
+  margin: 0 2rem 0 1rem;
+  color: $secondary-color;
+  font-weight: 700;
+
+  .place {
+    font-size: 0.9rem;
+    line-height: 0;
+  }
+  .month {
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 0.5rem;
+    line-height: 1;
+  }
+}
+
+.stars-list {
+  margin-right: 0.5rem;
+  display: flex;
+  li {
+    margin-right: 0.3rem;
+    i.fa-star {
+      color: $attention-color;
+      font-size: 1.5rem;
+    }
+    &:last-child {
+      i.fa-star {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+.rating {
+  color: $secondary-color
+}
+.films-list {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    width: 32%;
+    border: 1px solid $secondary-color;
+  }
+}
+
+.owl-prev {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  width: 34px;
+  height: 34px;
+  @include small-bg("../img/errow-left.png");
+  background-color: #eee;
+  border: 1px solid #d2d2d2;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5), 0 0 0 10px rgba(0, 0, 0, 0.5), inset 0.6px 0.8px 0 rgba(255, 255, 255, 0.5);
+  text-indent: -9999px;
+  border-radius: 100%;
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+.owl-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 9%;
+  width: 34px;
+  height: 34px;
+  @include small-bg("../img/arrow-right.png");
+  background-color: #eee;
+  border: 1px solid #d2d2d2;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5), 0 0 0 10px rgba(0, 0, 0, 0.5), inset 0.6px 0.8px 0 rgba(255, 255, 255, 0.5);
+  text-indent: -9999px;
+  border-radius: 100%;
+  @media (max-width: 700px) {
+    display: none;
   }
 }

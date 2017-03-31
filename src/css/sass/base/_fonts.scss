@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
 @font-face {
-  font-family: "open-sans";
-  src: url('../../fonts/Regular/OpenSans-Regular.ttf') format('truetype'),
-  url('../../fonts/Regular/OpenSans-Regular.woff') format('WOFF'),
-  url('../../fonts/Regular/OpenSans-Regular.eot') format('embedded-opentype'),
-  url('../../fonts/Regular/OpenSans-Regular.svg')format('svg');
+  font-family: "tahoma-reg";
+  src: url('../../fonts/tahoma/reg/Tahoma.ttf') format('truetype'),
+  url('../../fonts/tahoma/reg/Tahoma.woff') format('WOFF'),
+  url('../../fonts/tahoma/reg/Tahoma.eot') format('embedded-opentype'),
+  url('../../fonts/tahoma/reg/Tahoma.svg')format('svg');
 
 }
 @font-face {
-  font-family: "gotham";
-  src: url('../../fonts/gotham-bold.ttf') format('truetype'),
-  url('../../fonts/gotham-bold.otf') format('opentype');
+  font-family: "tahoma-bold";
+  src: url('../../fonts/tahoma/bold/Tahoma-Bold.ttf') format('truetype'),
+  url('../../fonts/tahoma/bold/Tahoma-Bold.woff') format('WOFF'),
+  url('../../fonts/tahoma/bold/Tahoma-Bold.eot') format('embedded-opentype'),
+  url('../../fonts/tahoma/bold/Tahoma-Bold.svg')format('svg');
 }

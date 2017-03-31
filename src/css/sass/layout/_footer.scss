@@ -1,47 +1,68 @@
 .main-footer {
-  text-align: center;
-  border-top: 1px solid $grey;
-  .menu-list {
-    @include justify-content(center);
-  }
-}
-.main-content {
-  padding: 5rem 0;
-}
-.phone-number {
-  @include lato(2.3rem, 400);
-  color: $main-dark;
-  .fa-phone {
-    font-size: 20px;
-  }
-}
-.social-networks-list {
-  margin-top: 2.5rem;
-  li {
-    display: inline-block;
-    margin-right: 1.5rem;
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover .fa {
-      color: $main-color;
-    }
-    .fa {
-      font-size: 1.8rem;
-      color: $main-blue;
+  border-top: 7px solid $main-border;
+  position: relative;
+
+  &:before {
+    @include pseudo('', block);
+    position: absolute;
+    top: -25%;
+    right: 8%;
+    width: 22.1rem;
+    height: 10.4rem;
+    @include small-bg("../img/footer-stuff.png");
+    @media (max-width: 991px) {
+     display: none;
     }
   }
 }
-.copyright-foot {
-  padding: 1.5rem 0;
-  background: $main-blue;
+.top-footer {
+  padding-top: 3rem;
+  background: $brand-color;
+  .container {
+    padding-bottom: 4.5rem;
+    position: relative;
+
+    &:before {
+      @include pseudo('', block);
+      position: absolute;
+      bottom: 6%;
+      left: 0;
+      width: 10.9rem;
+      height: 1.7rem;
+      @include small-bg("../img/logo.png");
+    }
+
+    &:after {
+      @include pseudo('', block);
+      position: absolute;
+      bottom: 2%;
+      right: 0;
+      width: 7rem;
+      height: 4rem;
+      @include small-bg("../img/web-icon.png");
+    }
+  }
 }
-a {
-  @include transition-duration(.3s);
-  &.copyright-link {
-    color: $white;
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 991px) {
+    justify-content: flex-start;
+  }
+  & > li {
+    margin: 0 4rem 3rem 0;
+  }
+
+  a {
+    text-decoration: underline;
     &:hover {
-      text-decoration: underline;
+      color: $attention-color;
     }
   }
+}
+.bottom-footer {
+  height: 3rem;
+  background: $foot-color;
+  text-indent: -9999px;
 }

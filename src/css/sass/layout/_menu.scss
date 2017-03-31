@@ -1,70 +1,58 @@
 .main-nav {
-  .main-footer & {
-    @media (max-width: 767px) {
-      width: 65%;
-      margin: 0 auto;
-    }
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 991px) {
+    width: auto;
   }
 }
 .menu-list {
-  @include display-flex;
-  @include justify-content(flex-end);
-  .main-header & {
-    @media (min-width: 768px)and(max-width: 991px) {
-      .btn {
-        padding: 1.3rem 1.5rem;
-      }
-    }
-    @media (max-width: 767px) {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 100;
-      width: 60%;
-      text-align: center;
-      background: rgba(0, 0, 0, .91);
-      a {
-        color: $white;
-      }
-    }
-    @media (max-height: 341px) {
-      .btn {
-        padding: 1.3rem 2rem;
-      }
-    }
-  }
-  .main-footer & {
-    @media (max-width: 767px) {
-      margin-bottom: 2rem;
-      padding: 2rem 0;
-      border: 1px solid $grey-text;
-      background: $sky-blue;
-      @include border-radius(2px);
-    }
-  }
-  @media (max-width: 767px) {
-    @include flex-direction(column);
-    @include justify-content(center);
-    @include align-items(center);
+  @media (max-width: 991px) {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background: rgba(0, 0, 0, .95);
+    display: none;
+    z-index: 2;
   }
   li {
-    &:hover {
-      a {
-        background: $buttons-bg;
-        color: $white;
+    position: relative;
+    @media (max-width: 991px) {
+     text-align: center;
+    }
+
+
+    &:after {
+      @include pseudo('', block);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 3.6rem;
+      @include small-bg("../img/line.png");
+      @media (max-width: 991px) {
+        display: none;
       }
     }
   }
-  a {
-    text-decoration: none;
-    &:active {
-      color: $menu-color;
-    }
-    &:focus {
-      @extend a:active;
+  display: flex;
+  justify-content: space-between;
+}
 
-    }
+.first-item {
+  &:before {
+    @include pseudo('', block);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 3.6rem;
+    @include small-bg("../img/line.png");
   }
 }

@@ -1,0 +1,161 @@
+.watch-now {
+  padding-top: 2.5rem;
+
+  h2 {
+    max-width: 77.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+}
+.films-wrap {
+  position: relative;
+  &:before {
+    @include pseudo('', block);
+    position: absolute;
+    top: -3%;
+    left: -5%;
+    width: 5.2rem;
+    height: 34.3rem;
+    @include small-bg("../img/films-stuff.png");
+    @media (max-width: 1340px) {
+      display: none;
+    }
+  }
+}
+.film-online {
+  &:first-child {
+    .img-wrap {
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: 991px) {
+    margin-bottom: 2rem;
+  }
+  .img-wrap {
+    position: relative;
+    max-width: 21.1rem;
+    margin-bottom: 4.5rem;
+
+    &:before {
+      @include pseudo('', block);
+      position: absolute;
+      bottom: -14%;
+      left: 2%;
+      width: 4.5rem;
+      height: 6.6rem;
+      @include small-bg("../img/img-stuff.png");
+    }
+
+    &:after {
+      @include pseudo('', block);
+      position: absolute;
+      bottom: -25%;
+      left: -6%;
+      width: 24.5rem;
+      height: 2.1rem;
+      @include small-bg("../img/shaddow-bottom.png");
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin-bottom: 1rem;
+    border: 0.5rem solid $main-border;
+  }
+}
+
+.hover-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url("../img/img-hover.png") top right no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  .stars-list {
+    margin-top: 1rem;
+  }
+}
+
+// --Sidebar
+
+.sidebar {
+  background: $brand-color;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  &-right {
+    position: relative;
+    padding: 1rem 0.5rem;
+    margin-top: 3rem;
+
+    .watch-now &:after {
+      @include pseudo('', block);
+      position: absolute;
+      bottom: 5%;
+      right: 7%;
+      width: 1.9rem;
+      height: 2rem;
+      @include section-bg("../img/film-icon.png");
+    }
+    h3 {
+      text-align: right;
+      font-size: 1.2rem;
+    }
+  }
+  .aside-head {
+    width: 100%;
+    padding: 0.5rem 0 2rem;
+    border-radius: 0.5rem;
+    background: url("../img/left-title-stuff.png") top left no-repeat;
+    background-size: cover;
+    text-align: right;
+    padding-right: 1rem;
+    @media (max-width: 991px) {
+      background: none;
+    }
+  }
+}
+
+.updates-list {
+  margin: 1rem 0;
+  li {
+    overflow: hidden;
+    border-bottom: 2px solid $border-color;
+    margin-bottom: 5%;
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
+  }
+  img {
+    display: block;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  .translate {
+    display: block;
+    line-height: 0;
+    margin: 1rem 0 1.5rem;
+  }
+  .genre {
+    line-height: 1.5;
+  }
+
+  h4 {
+    text-decoration: underline;
+  }
+}
+.update-link {
+  display: block;
+  text-align: center;
+}

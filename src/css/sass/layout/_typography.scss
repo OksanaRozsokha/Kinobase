@@ -1,23 +1,63 @@
 .text {
-  @include open-sans(1.3rem);
-  color: $common-text;
-  line-height: 2.2rem;
+  font-size: 1.1rem;
+  line-height: 1.3em;
 
-  &-white {
-    color: $white;
+  &-mini {
+    font-size: 1.0rem;
   }
-  &-grey {
-    color: $grey-white;
+  &-tiny {
+    font-size: 0.9rem;
+  }
+  &-secondary {
+    color: $secondary-color;
+  }
+  &-attention {
+    color: $attention-color;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  &-tertiary {
+    color: $tertiary-color;
+  }
+  &-inform {
+    color: $info-color;
+  }
+  &-minority {
+    color: $minority-color;
+  }
+}
+
+.title {
+  font-size: 1.4rem;
+  color: $main-color;
+
+  &-bold {
+    font-weight: 700;
   }
 
-  &-title {
-    @include lato(1.6rem, 700);
-    color: $main-dark;
-    text-transform: uppercase;
+  &-mini {
+    font-size: 1.1rem;
   }
-  &-big-title {
-    @include gotham(3rem);
-    font-weight: 900;
-    text-transform: uppercase;
+  &-normal {
+    font-size: 1.2rem;
   }
+  &-maxi {
+    font-size: 1.6rem;
+  }
+  &-biggest {
+    font-size: 1.7rem;
+  }
+  &-secondary {
+    color: $secondary-color;
+  }
+  &-tertiary {
+    color: $tertiary-color;
+  }
+  &-main {
+    color: $main-color;
+  }
+
+
+
 }

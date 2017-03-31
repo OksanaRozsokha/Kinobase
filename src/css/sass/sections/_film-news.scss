@@ -1,0 +1,293 @@
+.film-news {
+  padding: 2rem 0 11.5rem;
+  .container {
+    padding-right: 0;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      padding-left: 0;
+    }
+  }
+  .sidebar-right {
+    width: 26%;
+    margin-top: 0;
+    border-radius: 0 0 .5rem .5rem;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+// First column
+
+.first-column {
+  width: 38%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.sidebar-left {
+  margin-bottom: 1rem;
+  border-radius: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+.recent-films {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 2px solid $border-color;
+  justify-content: space-between;
+}
+.rating-list {
+  padding-bottom: 1.5rem;
+  li {
+    display: flex;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .number {
+      margin: 0 2.5rem 0 1rem;
+    }
+  }
+}
+.sidebar-top {
+  h3 {
+    padding: 0.5rem 0;
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
+    border-radius: .5rem;
+  }
+}
+
+.social-links {
+  padding-top: 0.5rem;
+  align-items: center;
+  li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-indent: -9999px;
+  }
+}
+.vk-logo {
+  @include small-bg("../img/vk-icon.png");
+}
+.ff-logo {
+  @include small-bg("../img/ff-icon.png");
+}
+.pan-logo {
+  @include small-bg("../img/pencel-icon.png");
+}
+.yandex-logo {
+  @include small-bg("../img/yandex-icon.png");
+}
+.hamster-logo {
+  @include small-bg("../img/animal-icon.png");
+}
+.square-logo {
+  @include small-bg("../img/skware.icon.png");
+}
+.facebook-logo {
+  @include small-bg("../img/facebook-icon.png");
+}
+.mail-logo {
+  @include small-bg("../img/mail-icon.png");
+}
+.star-logo {
+  @include small-bg("../img/star-icon.png");
+}
+.twitter-logo {
+  @include small-bg("../img/twitter-icon.png");
+}
+.text-border {
+  padding: 0.5rem 0;
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+}
+.comments-info {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+.sidebar-bottom {
+  position: relative;
+  &:after {
+    @include pseudo('', block);
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 18.1rem;
+    height: 2.9rem;
+    @include small-bg("../img/bottom-content-stuff.png");
+  }
+}
+
+//second column
+
+.second-column {
+  position: relative;
+  width: 38%;
+  padding: 1.5rem 0.5rem 0 1rem;
+  background: $secondary-color;
+  margin-left: 1rem;
+  border-radius: .5rem 0 0 .5rem;
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  img {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+.showing-list {
+  margin: 1rem 0;
+  &:after {
+    @include pseudo('', block);
+    width: 31.7rem;
+    height: 1.7rem;
+    @include small-bg("../img/shaddow-light.png");
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+}
+.film-description {
+  margin: 2.5rem 0 2rem;
+  &:after {
+    @include pseudo('', block);
+    width: 31.7rem;
+    height: 1.7rem;
+    @include small-bg("../img/shaddow-light.png");
+    margin-top: 1rem;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+}
+.serials-list {
+  margin-top: 2rem;
+  li {
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  img {
+    float: left;
+  }
+  .btn {
+    margin-right: 0.5rem;
+  }
+}
+.short-content {
+  max-width: 17rem;
+}
+
+// Third column
+
+.film-name-lists {
+  li {
+    display: flex;
+    max-width: 12rem;
+  }
+  .number {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  span {
+    &:first-child {
+      display: block;
+    }
+  }
+}
+.money-list {
+  margin-top: 0.5rem;
+
+  li {
+    margin-bottom: 2.8rem;
+  }
+}
+.comments-list {
+  li {
+    &:first-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.list-second {
+  border-bottom: 2px solid $border-color;
+  li {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & > span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    max-width: 24rem;
+  }
+  & + h3 {
+    padding-top: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+.img-wrap {
+  display: block;
+  position: relative;
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    .part-hover-block {
+      display: block;
+    }
+  }
+}
+.part-hover-block {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: rgba(0, 0, 0, .6);
+}
+.next-film {
+  margin-top: 0.5rem;
+  display: block;
+  text-align: right;
+}

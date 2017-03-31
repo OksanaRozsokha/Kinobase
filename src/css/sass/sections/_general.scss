@@ -1,42 +1,45 @@
 html {
   font-size: 0.625rem;
 }
+body {
+  @include tahoma-reg(1.2rem);
+  color: $main-color;
+  line-height: 1.3em;
+}
+section {
+  @include section-bg("../img/section-bg.png");
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
 a {
-  text-decoration: none;
-  outline: none;
-  @include transition-duration(.1s);
+  transition-duration: .3s;
+
 }
-.mt-7 {
-  margin-top: 5rem;
+
+//footer pressing
+* {
+  margin: 0;
+  padding: 0;
 }
-.error {
-  border: 2px solid red;
+html,
+body {
+  height: 100%;
 }
-.success {
-  border: 2px solid green;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
 .active {
   overflow: hidden;
-
-}
-.owl-carousel .owl-dots {
-  margin: 2rem auto 0;
-  text-align: center;
-}
-.owl-carousel .owl-dot {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: inline-block;
-  margin-right: 0.5rem;
-  border: 2px solid #dedfe0;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.owl-carousel .owl-dots .active {
-  border: 2px solid #1ca8dd;
-}
-
-.owl-carousel .owl-dots .owl-dot:last-child {
-  margin-right: 0;
 }

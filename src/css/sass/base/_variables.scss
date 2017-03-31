@@ -1,16 +1,23 @@
-$main-bright-grey: #dfdfdf;
-$brand-black: #242424;
-$secondary-blue: #114591;
-$tertiary-white: #f3f3f3;
-$att-pink: #cc204d;
-$text-white: #fff;
-$text-black: #000;
-$text-grey:
+$main-black: #000;
+$brand-dark: #222;
+$secondary-white: #fff;
+$tertiary-grey: #6d6c6c;
+$attention-pink: #cc204d;
+$minority-blue: #1a58b6;
+$info-grey: #a2a2a2;
+$title-light: #a8a6a6;
+$border-grey: #2a3033;
+$foot-dark: #151515;
+$main-border-grey: #b9b9b9;
 
-
-$main-color: $main-bright-grey;
-$brand-color: $brand-black;
-$secondary-color: $secondary-blue;
-$tertiary-color: $att-pink;
-$base-text-color: $text-white;
-$secondary-text-color: $text-black;
+$main-color: $main-black;
+$brand-color: $brand-dark;
+$secondary-color: $secondary-white;
+$tertiary-color: $tertiary-grey;
+$attention-color: $attention-pink;
+$minority-color: $minority-blue;
+$info-color: $info-grey;
+$intro-title: $title-light;
+$border-color: $border-grey;
+$foot-color: $foot-dark;
+$main-border: $main-border-grey;

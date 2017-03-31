@@ -1,43 +1,638 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Business</title>
-        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" type="text/css" />
-        <link href="css/css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kinobase</title>
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" type="text/css"/>
+    <link href="css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
         <header class="main-header">
-            <div class="container">
-                <a class="logo" href="#">
-                    <img src="img/logo.png" alt="">
-                </a>
-                <nav class="main-nav">
-                    <ul class="menu-list">
-                        <li><a class="btn" href="#">Home</a></li>
-                        <li><a class="btn" href="#">Service</a></li>
-                        <li><a class="btn" href="#">About us</a></li>
-                        <li><a class="btn" href="#">Pricing table</a></li>
-                        <li><a class="btn" href="#">How it work</a></li>
-                        <li><a class="btn" href="#">Happy clients</a></li>
-                        <li><a class="btn" href="#">Contact us</a></li>
+            <div class="top-header">
+                <div class="container">
+                    <div class="site-info">
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="">
+                            <h1>Кинопоиск</h1>
+                        </a>
+                        <span class="description text text-mini text-tertiary">Открой мир кино с нами</span>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="menu-list ">
+                            <li><a class="btn btn-menu first-item" href="#">кино</a></li>
+                            <li><a class="btn btn-menu" href="#">сериалы</a></li>
+                            <li><a class="btn btn-menu" href="#">афиша</a></li>
+                            <li><a class="btn btn-menu" href="#">тексты</a></li>
+                            <li><a class="btn btn-menu" href="#">рейтингы</a></li>
+                            <li><a class="btn btn-menu" href="#">программы и шоу</a></li>
+                        </ul>
+                        <button class="btn menu hidden-lg-up"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    </nav>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="container">
+                    <ul class="account-links">
+                        <li><a href="#" class="title title-secondary">Создать аккаунт</a></li>
+                        <li><a href="#" class="title title-secondary">Войти</a></li>
                     </ul>
-                    <button class="menu hidden-md-up"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                </nav>
+                    <div class="form-block">
+                        <form action="#" class="search-form">
+                            <button class="btn btn-search">Поиск</button>
+                            <div class="input-wrap">
+                                <input class="search-inp" type="text" maxlength="70" placeholder="Что будем искать)">
+                            </div>
+                        </form>
+                        <span class="form-info text text-mini text-secondary">расширенный поиск•что ищут?</span>
+                    </div>
+                </div>
             </div>
         </header>
         <section class="intro">
             <div class="container">
+                <h2 class="intro-title">Рейтинг ожиданий</h2>
+            </div>
+            <div class="owl-carousel">
+                <div class="owl-item owl-item-first">
+                    <div class="container">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <a href="#"><h3 class="title title-secondary title-maxi">Мадагаскар</h3></a>
+                                <a href="#"><span class="text-secondary">Madagascar 3: Europe's Most Wanted</span></a>
+                                <div class="inline-content">
+                                    <ul class="date-list">
+                                        <li>0</li>
+                                        <li>7</li>
+                                    </ul>
+                                    <p class="short-info"><span class="place">На сайте</span><span
+                                            class="month">Июня</span></p>
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <span class="rating">9,5/10</span>
+
+                                </div>
+                                <p class="text text-secondary">
+                                    Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев
+                                    Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механических
+                                    инновации
+                                    пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+                                </p>
+                            </div>
+                            <ul class="films-list">
+                                <li><a href="#"><img src="img/slider-dot-first.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-second.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-third.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-item-second">
+                    <div class="container">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <a href="#"><h3 class="title title-secondary title-maxi">Мадагаскар</h3></a>
+                                <a href="#"><span class="text-secondary">Madagascar 3: Europe's Most Wanted</span></a>
+                                <div class="inline-content">
+                                    <ul class="date-list">
+                                        <li>0</li>
+                                        <li>7</li>
+                                    </ul>
+                                    <p class="short-info"><span class="place">На сайте</span><span
+                                            class="month">Июня</span></p>
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <span class="rating">9,5/10</span>
+
+                                </div>
+                                <p class="text text-secondary">
+                                    Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев
+                                    Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механических
+                                    инновации
+                                    пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+                                </p>
+                            </div>
+                            <ul class="films-list">
+                                <li><a href="#"><img src="img/slider-dot-first.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-second.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-third.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-item-third">
+                    <div class="container">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <a href="#"><h3 class="title title-secondary title-maxi">Мадагаскар</h3></a>
+                                <a href="#"><span class="text-secondary">Madagascar 3: Europe's Most Wanted</span></a>
+                                <div class="inline-content">
+                                    <ul class="date-list">
+                                        <li>0</li>
+                                        <li>7</li>
+                                    </ul>
+                                    <p class="short-info"><span class="place">На сайте</span><span
+                                            class="month">Июня</span></p>
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <span class="rating">9,5/10</span>
+
+                                </div>
+                                <p class="text text-secondary">
+                                    Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев
+                                    Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механических
+                                    инновации
+                                    пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+                                </p>
+                            </div>
+                            <ul class="films-list">
+                                <li><a href="#"><img src="img/slider-dot-first.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-second.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-third.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-item-fourth">
+                    <div class="container">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <a href="#"><h3 class="title title-secondary title-maxi">Мадагаскар</h3></a>
+                                <a href="#"><span class="text-secondary">Madagascar 3: Europe's Most Wanted</span></a>
+                                <div class="inline-content">
+                                    <ul class="date-list">
+                                        <li>0</li>
+                                        <li>7</li>
+                                    </ul>
+                                    <p class="short-info"><span class="place">На сайте</span><span
+                                            class="month">Июня</span></p>
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <span class="rating">9,5/10</span>
+
+                                </div>
+                                <p class="text text-secondary">
+                                    Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев
+                                    Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механических
+                                    инновации
+                                    пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+                                </p>
+                            </div>
+                            <ul class="films-list">
+                                <li><a href="#"><img src="img/slider-dot-first.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-second.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/slider-dot-third.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="watch-now">
+            <div class="container">
+                <h2 class="title">
+                    Пусть к вам проникнет наше настроение и останется только хорошее впечатление!
+                    <span class="title-biggest title-bold">Наслаждайтесь просмотром и хорошого настроения!</span>
+                </h2>
+                <div class="row films-wrap">
+                    <div class="film-online col-sm-12 col-lg-3">
+                        <a href="#"><h3 class="title title-normal">Новый Человек-паук (2012)</h3></a>
+                        <a href="#">
+                            <div class="img-wrap">
+                                <img src="img/film-item-first.png" alt="">
+                                <div class="hover-block">
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="text">
+                            Получив сверхчеловеческие способности, Питер Паркер пытается вести нормальную жизнь и
+                            разобраться, кем же он теперь стал. Но сейчас на нормальную жизнь ...
+                        </p>
+                        <a href="#" class="btn btn-brand btn-middle">Смотреть сейчас</a>
+                    </div>
+                    <div class="film-online col-sm-12 col-lg-3">
+                        <a href="#"><h3 class="title title-normal">Авраам Линкольн: Охотник на вампиров (2012)</h3></a>
+                        <a href="#">
+                            <div class="img-wrap">
+                                <img src="img/film-item-second.png" alt="">
+                                <div class="hover-block">
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="text">
+                            Убита мать президента Линкольна, и все указывает на вампиров. После этой трагедии Линкольн объявляет войну до полного уничтожения ...
+                        </p>
+                        <a href="#" class="btn btn-brand btn-middle">Смотреть сейчас</a>
+                    </div>
+                    <div class="film-online col-sm-12 col-lg-3">
+                        <a href="#"><h3 class="title title-normal">Темный рыцарь: Возрождение легенды (2012)</h3></a>
+                        <a href="#">
+                            <div class="img-wrap">
+                                <img src="img/film-item-third.png" alt="">
+                                <div class="hover-block">
+                                    <ul class="stars-list">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="text">
+                            Восемь лет спустя после событий Темного Рыцаря, в Готэм приходит новый лидер террористов, Бэйн, неся с собой хаос и разрушения ...</p>
+                        <a href="#" class="btn btn-brand btn-middle">Смотреть сейчас</a>
+                    </div>
+                    <div class="sidebar sidebar-right col-sm-12 col-lg-3">
+                        <div class="aside-head"><h3 class="title-bold title-secondary">Обновления <span
+                                class="text-attention">на сайте</span></h3></div>
+                        <ul class="updates-list">
+                            <li>
+                                <a href="#"><img src="img/film-advertise-first.png" alt=""></a>
+                                <a href="#">
+                                    <h4 class="title title-secondary title-mini title-bold">G.I. Joe: Бросок кобры 2
+                                        (2012)</h4>
+                                </a>
+                                <span class="translate text text-secondary">G.I. Joe: Retaliation</span>
+                                <p class="genre text text-secondary">Жанр: Триллер, Боевик, Фантастика, Приключения</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/film-advertise-second.png" alt=""></a>
+                                <a href="#">
+                                    <h4 class="title title-secondary title-mini title-bold">Ледниковый период 4:
+                                        Континентальный дрейф (2012)</h4>
+                                </a>
+                                <p class="text text-secondary">Жанр: Мультфильм</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="update-link text-secondary">Смотреть все обновления...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="film-news">
+            <div class="container d-flex align-items-start">
+                <div class="first-column">
+                    <div class="sidebar sidebar-left sidebar-top">
+                        <div class="recent-films d-flex">
+                            <ul class="premieres-list">
+                                <li><a href="#" class="title title-tertiary">Премьеры</a></li>
+                                <li><a href="#" class="text-secondary">Прометей</a></li>
+                                <li><a href="#" class="text-secondary">Боже, благослови Америку</a></li>
+                                <li><a href="#" class="text-secondary">Небесный суд</a></li>
+                                <li><a href="#" class="text-secondary">Кассадага</a></li>
+                            </ul>
+                            <ul class="events-list">
+                                <li><a href="#" class="title title-tertiary">Кинособытия</a></li>
+                                <li><a href="#" class="text-secondary">Фестиваль норвежского кино</a></li>
+                                <li><a href="#" class="text-secondary">Beat Film Festival</a></li>
+                                <li><a href="#" class="text-secondary">Весенний киномарафон</a></li>
+                                <li><a href="#" class="text-secondary">Выставка Терри Гиллиама</a></li>
+                            </ul>
+                        </div>
+                        <h3 class="title title-tertiary">Рейтинг новостей недели</h3>
+                        <ul class="rating-list">
+                            <li><span class="date text text-attention">24.05.2012</span> <span
+                                    class="number text text-tertiary">1.</span> <a href="#"><span class="text text-secondary">Гари Олдман создаст Робокопа</span></a>
+                            </li>
+                            <li><span class="date text text-attention">24.05.2012</span> <span
+                                    class="number text text-tertiary">2.</span> <a href="#"><span class="text text-secondary">«Бросок кобры 2» выйдет девятью месяцами позже и станет трехмерным</span></a>
+                            </li>
+                            <li><span class="date text text-attention">25.05.2012</span> <span
+                                    class="number text text-tertiary">3.</span> <a href="#"><span class="text text-secondary">Джон Фавро окажется в «Железном человеке 3»</span></a>
+                            </li>
+                            <li><span class="date text text-attention">25.05.2012</span> <span
+                                    class="number text text-tertiary">4.</span> <a href="#"><span class="text text-secondary">Мадс Миккельсен позлодействует в сиквеле «Тора»</span></a>
+                            </li>
+                            <li><span class="date text text-attention">25.05.2012</span> <span
+                                    class="number text text-tertiary">5.</span> <a href="#"><span class="text text-secondary">Канн-2012: Роберт Паттинсон хотел всего лишь подстричься</span></a>
+                            </li>
+                        </ul>
+                        <h3 class="title title-tertiary">Подпишись на наши групы</h3>
+                        <ul class="social-links">
+                            <li><a href="#" class="vk-logo">vk</a></li>
+                            <li><a href="#" class="ff-logo">ff</a></li>
+                            <li><a href="#" class="pan-logo">pencel</a></li>
+                            <li><a href="#" class="yandex-logo">yandex</a></li>
+                            <li><a href="#" class="hamster-logo">hamster</a></li>
+                            <li><a href="#" class="square-logo">square</a></li>
+                            <li><a href="#" class="facebook-logo">facebook</a></li>
+                            <li><a href="#" class="mail-logo">mail</a></li>
+                            <li><a href="#" class="star-logo">star</a></li>
+                            <li><a href="#" class="twitter-logo">twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar sidebar-left">
+                        <div class="aside-head"><a href="#"><h3 class="title-normal title-secondary">«Обитель зла 5: Возмездие»: <span
+                                class="text-minority">русский тизер </span></h3></a></div>
+                        <a href="#"><img src="img/film-advertise-fourth.png" alt=""></a>
+                        <p class="text-border text text-secondary">Действие пятой части начинается с концовки четвертой части, когда
+                            Джилл оказывается на корабле "Аркадия". Теперь она отдает приказ штурмовать ...</p>
+                        <div class="comments-info">
+                            <span class="text text-secondary">21.05.2012 15:19</span>
+                            <span class="text text-secondary">(прочит: 361 раз, коментирован: 79 раз)</span>
+                        </div>
+                    </div>
+                    <div class="sidebar sidebar-left sidebar-bottom">
+                        <div class="aside-head"><a href="#"><h3 class="title-normal title-secondary">Дизайн -Олег Щербина <span
+                                class="text text-secondary">(Desing by WebGod Studio)</span></h3></a></div>
+                        <a href="#"><img src="img/film-advertise-fifth.png" alt=""></a>
+                        <p class="text-border text text-secondary">Дизайн сделан специально для конкурса uCoz
+                            Над выполнением работал Олег Щербина (Desing by WebGod Studio )
+                            Если вам понравилась работа пишите в skype: jet_sasuke или olejegcord
 
-        <footer class="main-footer">
+                        </p>
+                        <div class="comments-info">
+                            <span class="text text-secondary">21.05.2012 15:19</span>
+                            <span class="text text-secondary">(прочит: 361 раз, коментирован: 79 раз)</span>
+                        </div>
+                    </div>
+                </div>
 
-        </footer>
+                <div class="second-column">
+                    <h3 class="title">Что идет в кинотеатрах?</h3>
+                    <ul class="showing-list">
+                        <li>
+                            <a href="#"><img src="img/film-advertise-third.png" alt=""></a>
+                            <div class="showing-content">
+                                <a href="#"><h4 class="title-normal title-bold title-main">Премьеры России — 17 мая</h4></a>
+                                <p>
+                                    Российский прокат в этот раз пестрит многообразием. Собрались в одну неделю нескромная
+                                    комедия «Диктатор» с Сашей Бароном Коэном, хлесткий боевик «Напролом», спродюсированный
+                                    ...
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/fourth.png" alt=""></a>
+                            <div class="showing-content">
+                                <a href="#"><h4 class="title-normal title-bold title-main">Премьеры России — 3 мая</h4></a>
+                                <p>
+                                    В России стартует один из важнейших проектов года — масштабные «Мстители» Джосса Уидона,
+                                    объединяющие в одном кинопространстве Железного Человека...
+                                </p>
+                            </div>
 
-        <script src="js/all.min.js"></script>
+                        </li>
+                    </ul>
+                    <a href="#"><h3 class="title title-main">Зрительский взгляд | <span class="text-minority">«Диктатор»</span></h3></a>
+                    <p class="film-description">
+                        <span class=" text-bold text-minority">CamiRojas:</span> «What the fuck did you call me?»
+                        Адмирал-генерал Аладин, безусловно, очень влиятельный,
+                        амбициозный, жестокий и самовлюблённый лидер североафриканского государства под названием Вадия.
+                        Для
+                        него не существует никаких правил, кроме тех, что он придумал сам. В его стране царит произвол,
+                        жесточайшая диктатура, угнетение и полное уничижение простого народа. Аладин, прям как тот самый
+                        мелкий воришка Аладин из диснеевского мультика, — это (...)
+                    </p>
+                    <h3 class="title">Новости сериалов</h3>
+                    <ul class="serials-list">
+                        <li>
+                            <a href="#"><h4 class="title-normal title-bold title-main">Дэвид Шор о финале House M.D.</h4></a>
+                            <a href="#"><img src="img/film-news-first.png" alt=""></a>
+                            <p>
+                                Итак, 21-го мая мы официально распрощались с сериалом House M.D. («Доктор Хаус»). У нас
+                                осталось восемь лет воспоминаний и с десяток не отвеченных вопросов. Ресурс TVLine
+                                разыскал
+                                одного из создателей шоу, Дэвида Шора, чтобы высказать...
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="short-content text-mini text-inform">Дата: 26.05.2012 00:57.
+                                    Комментариев: 261
+                                </span>
+                                <a href="#" class="btn btn-brand btn-small">Подробнее</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><h4 class="title-normal title-bold title-main">Дэвид Моррисси о роли Губернатора в The Walking
+                                Dead</h4></a>
+                            <a href="#"><img src="img/film-news-second.png" alt=""></a>
+                            <p>
+                                Специально для тех поклонников сериала The Walking Dead («Ходячие мертвецы»), которые не
+                                могут дождаться выхода третьего сезона, ресурс TVGuide взял небольшое интервью у
+                                британского
+                                актера Дэвида Моррисси.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="short-content text-mini text-inform">Дата: 26.05.2012 00:57.
+                                    Комментариев: 261
+                                </span>
+                                <a href="#" class="btn btn-brand btn-small">Подробнее</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar sidebar-right">
+                    <div class="aside-head"><h3 class="title-bold title-secondary">Кинокасса России • <span
+                            class="text-attention">руб.</span></h3></div>
+                    <div class="d-flex justify-content-between">
+                        <ul class="film-name-lists">
+                            <li>
+                                <span class="number text text-attention">1.</span>
+                                <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Люди в черном 3</span> Men
+                                    in Black III</p></a>
+                            </li>
+                            <li>
+                                <span class="number text text-attention">2.</span>
+                                <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Запретная зона</span> Chernobyl
+                                    Diaries</p></a>
+                            </li>
+                            <li>
+                                <span class="number text text-attention">3.</span>
+                                <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Диктатор</span> The
+                                    Dictator</p></a>
+                            </li>
+                            <li>
+                                <span class="number text text-attention">4.</span>
+                                <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Мрачные тени</span> The
+                                    Shadows</p></a>
+                            </li>
+                            <li>
+                                <span class="number text text-attention">5.</span>
+                                <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Мстители</span> The
+                                    Avengers</p></a>
+                            </li>
+                        </ul>
+                        <ul class="money-list">
+                            <li class="text text-secondary">533 050 190</li>
+                            <li class="text text-secondary">45 965 000</li>
+                            <li class="text text-secondary">33 295 425</li>
+                            <li class="text text-secondary">19 700 249</li>
+                            <li class="text text-secondary">18 684 876</li>
+                        </ul>
+                    </div>
+                    <div class="aside-head"><h3 class="title-bold title-secondary">Последние коментарии</h3></div>
+                    <ul class="comments-list">
+                        <li>
+                            <a href="#"><h4 class="title-normal text-attention">Рыцарь дня</h4></a>
+                            <p class="text text-secondary">
+                                Давно пройшли часи лицарства і героїзму, коли лише за посмішку благородної дами
+                                творилися подвиги. Крістофер Нолан вдихнув нове життя в філософію рицарства.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#"><h4 class="title-normal text-attention">Неудержимые</h4></a>
+                            <p class="text text-secondary">
+                                Нестримні/The Expendables - Хоч про це вже казано і переказано, але...Сталоне, Стетхем,
+                                Джет Лі, Брюс Віліс, Мікі Рурк, Арнольд Шварцнегер у одному фільмі. Ви колись таке чули
+                                чи бачили?
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="aside-head"><h3 class="title-bold title-secondary">Запросы-фильмы <span class="text-tiny text-attention">всего</span></h3></div>
+                    <ul class="film-name-lists list-second">
+                        <li>
+                            <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Прометей</span>Men
+                                in Black III</p></a>
+                            <span class="text text-secondary">31.05</span>
+                        </li>
+                        <li>
+                            <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Мадагаскар 3</span>Chernobyl
+                                Diaries</p></a>
+                            <span class="text text-secondary">07.06</span>
+                        </li>
+                        <li>
+                            <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Белоснежка и охотник</span>The
+                                Shadows</p></a>
+                            <span class="text text-secondary">14.06</span>
+                        </li>
+                        <li>
+                            <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Президент Линкольн: Охотник на вампиров</span>The
+                                Dictator</p></a>
+                            <span class="text text-secondary">21.06</span>
+                        </li>
+                        <li>
+                            <a href="#"><p class="text-tertiary"><span class="text-secondary text-bold">Лето. Однокласники. Любовь</span>The
+                                Avengers</p></a>
+                            <span class="text text-secondary">28.06</span>
+                        </li>
+                    </ul>
+                    <h3 class="title-maxi title-bold title-tertiary">случайный фильм</h3>
+                    <a href="#" class="img-wrap">
+                        <img src="img/acsident-film.png" alt="">
+                        <div class="part-hover-block">
+                            <span class="text-secondary">Морской бой</span>
+                        </div>
+                    </a>
+                    <a href="#" class="text-mini text-secondary next-film">другой случайный фильм</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="main-footer">
+        <div class="top-footer">
+            <div class="container">
+                <ul class="footer-links">
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Фильмы</h3>
+                        <ul class="movies-list">
+                            <li><a href="#" class="text-secondary">База фильмов</a></li>
+                            <li><a href="#" class="text-secondary">Афиша</a></li>
+                            <li><a href="#" class="text-secondary">В кинотеатрах</a></li>
+                            <li><a href="#" class="text-secondary">Скоро</a></li>
+                            <li><a href="#" class="text-secondary">Аниме</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Люди</h3>
+                        <ul class="people-list">
+                            <li><a href="#" class="text-secondary">Актеры</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Мультимедиа</h3>
+                        <ul class="media-list">
+                            <li><a href="#" class="text-secondary">Трейлеры</a></li>
+                            <li><a href="#" class="text-secondary">Фото</a></li>
+                            <li><a href="#" class="text-secondary">Обои</a></li>
+                            <li><a href="#" class="text-secondary">Саундтреки</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Общение</h3>
+                        <ul class="disscusion-list">
+                            <li><a href="#" class="text-secondary">Форум</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Рейтинги</h3>
+                        <ul class="best-list">
+                            <li><a href="#" class="text-secondary">Лучшие фильмы</a></li>
+                            <li><a href="#" class="text-secondary">Box office</a></li>
+                            <li><a href="#" class="text-secondary">В кинотеатрах</a></li>
+                            <li><a href="#" class="text-secondary">Скоро</a></li>
+                            <li><a href="#" class="text-secondary">Аниме</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Новости</h3>
+                        <ul class="news-film-list">
+                            <li><a href="#" class="text-secondary">Новости кино</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Пользоватили</h3>
+                        <ul class="users-list">
+                            <li><a href="#" class="text-secondary">Регистрация</a></li>
+                            <li><a href="#" class="text-secondary">Войти на сайт</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="title title-bold title-tertiary">Контакты</h3>
+                        <ul class="contacts-list">
+                            <li><a href="#" class="text-secondary">Форма обратной связи</a></li>
+                            <li><a href="#" class="text-secondary">реклама на kinobase</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-footer">footer</div>
+    </footer>
+</div>
 
-    </body>
+<script src="js/all.min.js"></script>
+
+</body>
 </html>
